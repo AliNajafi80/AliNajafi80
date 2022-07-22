@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viwport" content="width=device-width,initial-scale=1.0">
+<meta name="deccription" content="online shopping">
+<meta name="keywords" content="digikala,digistyle,clothes,clock">
+<meta name="author" content="ali najafi">
+<html>
+
+<head>
+    <title>فروشگاه اینترنتی دیجی استایل</title>
+    <style>
+        body {
+            font-family: tahoma;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+        
+        #header {
+            /* border: 3px solid black;*/
+            background: url(img/header/ee5ae34a08b3cb6c5035adf89eff8472aba3246b_1657953346.jpg) no-repeat;
+            background-size: cover;
+            height: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            opacity: 90%;
+            width: 100%;
+        }
+        
+        #header>#Tmenu {
+            align-items: center;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+        
+        #header>#Tmenu>.Titems {
+            display: inline-block;
+            width: 200px;
+            height: 5px;
+        }
+        
+        .v:hover {
+            opacity: 60%;
+            font-weight: bold;
+            line-height: 10px;
+        }
+        
+        .v:active {
+            opacity: 30%;
+        }
+        
+        .d {
+            margin: 0px 275px;
+        }
+        
+        .s {
+            all: unset;
+            background-color: pink;
+        }
+        
+        .Digistyle {
+            margin-top: 1%;
+            font-size: 45px;
+        }
+        
+        #header>#menu {
+            padding-right: 13%;
+            /* border: 3px solid blue;*/
+            width: 700px;
+            height: 20px;
+            margin: 10px auto;
+        }
+        
+        #header>#menu>.items {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-right: 3px;
+            vertical-align: center;
+            /* border: 2px dotted orange;*/
+            width: 70px;
+            height: 18px;
+            text-align: center;
+            background-size: 10px 155px;
+            float: right;
+        }
+        
+        #header>#menu>.items:hover {
+            opacity: 80%;
+            font-weight: bold;
+            line-height: 10px;
+            background-size: 45px;
+        }
+        
+        #header>#menu>.items:active {
+            opacity: 40%;
+        }
+        
+        #header>#menu>.it5 {
+            color: red;
+            border-right: 1px solid black;
+            padding-right: 15px;
+            margin-right: 25px;
+        }
+        
+        form {
+            background-color: #e146b8;
+            width: 200px;
+            height: 25px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        input {
+            all: unset;
+            font: 16px system-ui;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            padding: 6px 10px;
+        }
+        
+         ::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
+        
+        form {
+            background-color: #f121c4;
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        input {
+            all: unset;
+            font: 16px system-ui;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            padding: 6px 10px;
+        }
+        
+         ::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
+        
+        svg {
+            color: #fff;
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+        }
+        
+        button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        }
+        
+        button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        }
+        
+        #header>#piclink {
+            border: 5px solid red;
+            box-sizing: border-box;
+            height: 425px;
+            margin-top: -70px;
+        }
+        
+        #content {
+            background: url(img/bg/bg\ 08.png);
+            border: 1px solid rgb(83, 23, 233);
+            height: 1200px;
+        }
+        
+        #footer {
+            border: 1px solid rgb(32, 2, 50);
+            height: 200px;
+            background-color: #777;
+        }
+        
+        .ionicon {
+            margin-top: -10px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <div id="header">
+
+            <ul id="Tmenu">
+                <li class="Titems">
+                    <form role="search" id="form">
+                        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                        <button>
+                          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                        </button>
+                    </form>
+                </li>
+
+                <li class="Titems Digistyle d">
+                    <a href="https://www.digistyle.com/" target="_blank">
+                        <div id="DIGI">DIGISTYLE</div>
+                </li>
+                </a>
+
+                <li class="Titems v">
+                    <a href="https://www.digistyle.com/users/login-register/" target="_self">
+                        <div id="vorodi">وارد شوید</div>
+                    </a>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <hr style="width: 350px;height: 1px;background-color: black;">
+            <div id="menu">
+                <div class="items">زنانه</div>
+                <div class="items">مردانه</div>
+                <div class="items">بچگانه</div>
+                <div class="items">زیبایی و سلامت</div>
+                <div class="items it5">حراج استایل</div>
+                <div class="items">برند ها</div>
+                <div class="items">خانه ساعت</div>
+
+            </div>
+            <a href="https://www.digistyle.com/plp/plp_27942089/?&promo_name=%D8%AD%D8%B1%D8%A7%D8%AC+%D8%A8%D8%B2%D8%B1%DA%AF+%D8%A7%DA%A9%D8%B3%D8%B3%D9%88%D8%B1%DB%8C&promo_position=home_slider_digistyle_v2&promo_creative=116213&bCode=116213&promo_index=6" alt="حراج">
+
+                <div id="piclink">
+                    <svg style="width: 100px;height: 395px;"></svg>
+
+                </div>
+            </a>
+        </div>
+        <div id="content">
+            <iframe src="https://www.digistyle.com/?ref=home" width="100%" height="700" style="border-top: 6px solid red"></iframe>
+        </div>
+        <div id="footer">
+
+        </div>
+</body>
+
+</html>
